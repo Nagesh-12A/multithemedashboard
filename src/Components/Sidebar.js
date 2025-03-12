@@ -56,9 +56,10 @@ import Profile from "./Profile";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Navigate } from "react-router-dom";
 import AppRoutes from "./Routes";
 import nagesh from '../Images/Nag1.jpg';
+
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from '@mui/icons-material/X';
@@ -470,6 +471,12 @@ export default function PersistentDrawerLeft() {
 
   const navigate = useNavigate();
 
+
+  const handelheadernavigation=(path)=>{
+    navigate(path, { replace: true });
+
+  }
+
   return (
     <>
     {/* // <Box sx={{ display: "flex" }}> */}
@@ -492,7 +499,7 @@ export default function PersistentDrawerLeft() {
           </IconButton>
 
           <Typography variant="h6" noWrap component="div" sx={{ mr: 2 ,fontFamily:"Rubik"}}>
-          <Button href="/Body" style={{ padding: 5,fontFamily:"Rubik" }}>
+          <Button onClick={()=>handelheadernavigation('./Body')} style={{ padding: 5,fontFamily:"Rubik" }}>
               DashBoard
             </Button>
           </Typography>
@@ -502,7 +509,7 @@ export default function PersistentDrawerLeft() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" }, mr: 2 }}
           >
-            <Button href="/experience" style={{ padding: 5,fontFamily:"Rubik" }}>
+            <Button  onClick={()=>handelheadernavigation('./experience')} style={{ padding: 5,fontFamily:"Rubik" }}>
               Users
             </Button>
           </Typography>
@@ -512,7 +519,7 @@ export default function PersistentDrawerLeft() {
             component="div"
             sx={{ display: { xs: "none", sm: "block",fontFamily:"Rubik" } }}
           >
-            <Button href="/Getintouch" style={{ padding: 5,fontFamily:"Rubik" }}>
+            <Button  onClick={()=>handelheadernavigation('./Getintouch')} style={{ padding: 5,fontFamily:"Rubik" }}>
               Settings
             </Button>
           </Typography>
