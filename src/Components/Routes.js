@@ -7,12 +7,17 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Body from "./Body";
 
+
+
+
 function AppRoutes(){
+
     return(
         // <Router>
         <>
         <Routes>
             <Route path="/" element={<Body />} />
+            <Route path="/multithemedashboard" element={<Body />} />
             <Route path="/body" element={<Body/>} />
             <Route path="/experience" element={<Experience/>} />
             <Route path="/getintouch" element={<Getintouch/>} />

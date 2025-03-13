@@ -649,6 +649,7 @@ export default function PersistentDrawerLeft() {
                   fontWeight: 700,
                   letterSpacing: 0,
                   color:'white'
+
                 }} />
           </ListItemButton>
         </ListItem>
@@ -661,14 +662,14 @@ export default function PersistentDrawerLeft() {
     </Box> */}
     <Box sx={{ display: "flex", gap: 2,marginLeft:'38px', mt:'3'}}>
               <a href="https://github.com/Nagesh-12A?tab=repositories"><GitHubIcon  style={{ 
-                fill: "black"}}/></a>
+                fill: "green"}}/></a>
               <a href="https://www.linkedin.com/in/nagesh-vandana-9b4653275/"><LinkedInIcon  style={{ 
-                fill: "black"}}/></a>
+                fill: "green"}}/></a>
               <a href="https://x.com/home"><XIcon  
               style={{ 
-                fill: "black" }}/></a>
+                fill: "green" }}/></a>
               <a href="https://www.instagram.com/vandananagesh2001/"><InstagramIcon style={{ 
-                fill: "black",
+                fill: "green",
                  
                  }}/></a>
             </Box>

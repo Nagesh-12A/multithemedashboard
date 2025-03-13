@@ -113,11 +113,12 @@ const Skills = () => {
       <Typography
         variant="body1"
         sx={{
-          color: "#b0b0b0",
+          color: "black",
           maxWidth: "600px",
           mx: "auto",
           mt: 2,
           fontFamily:"Rubik"
+
         }}
       >
        <strong> I am a UI/UX designer and software engineer currently working as a freelancer.</strong>
